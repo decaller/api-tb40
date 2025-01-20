@@ -3,22 +3,27 @@
   "version": "0.1",
   "report": "",
   "parts": {
-    "umum":{
-      "nama":{
-        "lengkap":"",
-        "panggilan":""
-      },
-      "lahir":{
-        "tanggal":""
-      },
-      "keterangan":{
-        "tingkat":"",
-        "lembaga":"",
-        "refererr":""
-      },
-      "tanggal":""
+    "umum": {
+      "result": {
+        "nama": {
+          "lengkap": "",
+          "panggilan": ""
+        },
+        "lahir": {
+          "tanggal": ""
+        },
+        "keterangan": {
+          "tingkat": "",
+          "lembaga": "",
+          "refererr": ""
+        },
+        "tanggal": ""
+      }
     },
     "tb40": {
+      "input": "Array of 40 of value between 0-100 presenting 40 base pillars",
+      "calculation": "Calculate avarage of every group and rank every pillar in every group",
+      "result": { "2": [], "3": [], "6": [], "18": [], "40": [] },
       "presentation": {
         "definisi_tb40": {
           "title": "Definisi TB40",
@@ -34,10 +39,21 @@
         },
         "kepribadian": {
           "title": "kepribadian",
-          "data": "{{data.umum.nama.panggilan}} memiliki kepribadian {{data.tb40.result[2][0].name}} ({{data.tb40.result[2][1].data.definisi}}). Secara umum jiwanya cenderung suka {{data.tb40.result[3][0].data.definisi}}. Disamping {{data.nama.panggilan}} cenderung suka {{data.tb40.result[6][0].data.arti}}, {{nama.panggilan}} juga memiliki {{data.tb40.panggilan[18][0].data.arti}}. \n {{data.nama.panggilan}} adalah pribadi yang : {{data.tb40.result[40][0].data.nama}}, {{data.tb40.result[40][1].data.nama}}, {{data.tb40.result[40][2].data.nama}}, {{data.tb40.result[40][3].data.nama}} dan {{data.tb40.result[40][4].data.nama}}"
+          "data": "{{data.umum.result.nama.panggilan}} memiliki kepribadian {{data.tb40.result[2][0].name}} ({{data.tb40.result[2][1].data.definisi}}). Secara umum jiwanya cenderung suka {{data.tb40.result[3][0].data.definisi}}. Disamping {{data.nama.panggilan}} cenderung suka {{data.tb40.result[6][0].data.arti}}, {{nama.panggilan}} juga memiliki {{data.tb40.panggilan[18][0].data.arti}}. \n {{data.nama.panggilan}} adalah pribadi yang : {{data.tb40.result[40][0].data.nama}}, {{data.tb40.result[40][1].data.nama}}, {{data.tb40.result[40][2].data.nama}}, {{data.tb40.result[40][3].data.nama}} dan {{data.tb40.result[40][4].data.nama}}"
+        },
+        "ringkasan_gaya_belajar": {
+          "title": "Ringkasan Gaya Belajar",
+          "data": "Dalam belajar lebih suka : {{data.tb40.result[3][0].data.gaya_belajar_cara}}."
+        },
+        "ringkasan_bahasa_hati": {
+          "title": "Ringkasan Bahasa Hati",
+          "data": "Penyentuh perasaan yang paling efektif :  {{data.tb40.result[3][0].data.bahasa_hati_definisi}}."
+        },
+        "pemetaan_tafsir_bakat": {
+          "title": "Pemetaan Tafsir Bakat",
+          "data": " tb40.svg"
         }
       },
-      "result": { "2": [], "3": [], "6": [], "18": [], "40": [] },
       "groupLinage": [
         { "child": "40", "parent": "18" },
         { "child": "18", "parent": "6" },
@@ -46,7 +62,6 @@
       ],
       "pillars": [
         {
-          "questionIndex": null,
           "name": "Introvert",
           "pillar": { "no": "1", "group": "2" },
           "data": {
@@ -56,7 +71,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Extrovert",
           "pillar": { "no": "2", "group": "2" },
           "data": {
@@ -66,7 +80,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Karsa",
           "pillar": { "no": "1", "group": "3" },
           "data": {
@@ -85,7 +98,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Cipta",
           "pillar": { "no": "2", "group": "3" },
           "data": {
@@ -104,7 +116,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Rasa",
           "pillar": { "no": "3", "group": "3" },
           "parents": [{ "no": null, "group": null }],
@@ -124,7 +135,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Bekerja keras",
           "pillar": { "no": "1", "group": "6" },
           "parents": [
@@ -142,7 +152,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Berpikir",
           "pillar": { "no": "2", "group": "6" },
           "parents": [
@@ -160,7 +169,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Berperasaan",
           "pillar": { "no": "3", "group": "6" },
           "parents": [
@@ -178,7 +186,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Mempengaruhi",
           "pillar": { "no": "4", "group": "6" },
           "parents": [
@@ -196,7 +203,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Bekerjasama",
           "pillar": { "no": "5", "group": "6" },
           "parents": [
@@ -214,7 +220,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Melayani",
           "pillar": { "no": "6", "group": "6" },
           "parents": [
@@ -232,9 +237,8 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Berambisi",
-          "pillar": { "no": "01", "group": "18" },
+          "pillar": { "no": "1", "group": "18" },
           "parents": [{ "no": "1", "group": "6" }],
           "data": {
             "arab": null,
@@ -243,9 +247,8 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Berwibawa",
-          "pillar": { "no": "02", "group": "18" },
+          "pillar": { "no": "2", "group": "18" },
           "parents": [{ "no": "1", "group": "6" }],
           "data": {
             "arab": null,
@@ -254,9 +257,8 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Giat bekerja",
-          "pillar": { "no": "03", "group": "18" },
+          "pillar": { "no": "3", "group": "18" },
           "parents": [{ "no": "1", "group": "6" }],
           "data": {
             "arab": null,
@@ -265,9 +267,8 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka berpikir imajinatif",
-          "pillar": { "no": "04", "group": "18" },
+          "pillar": { "no": "4", "group": "18" },
           "parents": [{ "no": "2", "group": "6" }],
           "data": {
             "arab": null,
@@ -276,9 +277,8 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka berpikir positif",
-          "pillar": { "no": "05", "group": "18" },
+          "pillar": { "no": "5", "group": "18" },
           "parents": [{ "no": "2", "group": "6" }],
           "data": {
             "arab": null,
@@ -287,9 +287,8 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka berpikir analitis",
-          "pillar": { "no": "06", "group": "18" },
+          "pillar": { "no": "6", "group": "18" },
           "parents": [{ "no": "2", "group": "6" }],
           "data": {
             "arab": null,
@@ -298,9 +297,8 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka apa adanya",
-          "pillar": { "no": "07", "group": "18" },
+          "pillar": { "no": "7", "group": "18" },
           "parents": [{ "no": "3", "group": "6" }],
           "data": {
             "arab": null,
@@ -309,9 +307,8 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Pendiam",
-          "pillar": { "no": "08", "group": "18" },
+          "pillar": { "no": "8", "group": "18" },
           "parents": [{ "no": "3", "group": "6" }],
           "data": {
             "arab": null,
@@ -320,9 +317,8 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka merendah",
-          "pillar": { "no": "09", "group": "18" },
+          "pillar": { "no": "9", "group": "18" },
           "parents": [{ "no": "3", "group": "6" }],
           "data": {
             "arab": null,
@@ -331,7 +327,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka menguasai",
           "pillar": { "no": "10", "group": "18" },
           "parents": [{ "no": "4", "group": "6" }],
@@ -342,7 +337,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka memotivasi",
           "pillar": { "no": "11", "group": "18" },
           "parents": [{ "no": "4", "group": "6" }],
@@ -353,7 +347,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka menolong",
           "pillar": { "no": "12", "group": "18" },
           "parents": [{ "no": "4", "group": "6" }],
@@ -364,7 +357,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka menggunakan hubungan yang ada",
           "pillar": { "no": "13", "group": "18" },
           "parents": [{ "no": "5", "group": "6" }],
@@ -375,7 +367,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka membuat hubungan baru",
           "pillar": { "no": "14", "group": "18" },
           "parents": [{ "no": "5", "group": "6" }],
@@ -386,7 +377,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka mengeratkan hubungan yang sudah ada",
           "pillar": { "no": "15", "group": "18" },
           "parents": [{ "no": "5", "group": "6" }],
@@ -397,7 +387,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka melayani dengan cara memberi",
           "pillar": { "no": "16", "group": "18" },
           "parents": [{ "no": "6", "group": "6" }],
@@ -408,7 +397,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka melayani dengan cara menjaga",
           "pillar": { "no": "17", "group": "18" },
           "parents": [{ "no": "6", "group": "6" }],
@@ -419,7 +407,6 @@
           }
         },
         {
-          "questionIndex": null,
           "name": "Suka melayani dengan cara mengalah",
           "pillar": { "no": "18", "group": "18" },
           "parents": [{ "no": "6", "group": "6" }],
@@ -511,7 +498,7 @@
           "questionIndex": "4",
           "name": "‘aziimah",
           "pillar": { "no": "5", "group": "40" },
-          "parents": [{ "no": "03", "group": "18" }],
+          "parents": [{ "no": "3", "group": "18" }],
           "data": {
             "pilar40": "5",
             "arab": "العَزِيمَة",
@@ -563,7 +550,7 @@
           "questionIndex": "6",
           "name": "Dzakaa’",
           "pillar": { "no": "10", "group": "40" },
-          "parents": [{ "no": "06", "group": "18" }],
+          "parents": [{ "no": "6", "group": "18" }],
           "data": {
             "pilar40": "10",
             "arab": "الذَّكَاء",
@@ -615,7 +602,7 @@
           "questionIndex": "8",
           "name": "Firaasah",
           "pillar": { "no": "7", "group": "40" },
-          "parents": [{ "no": "04", "group": "18" }],
+          "parents": [{ "no": "4", "group": "18" }],
           "data": {
             "pilar40": "7",
             "arab": "الفِرَاسَة",
@@ -667,7 +654,7 @@
           "questionIndex": "10",
           "name": "Hayaa’",
           "pillar": { "no": "15", "group": "40" },
-          "parents": [{ "no": "09", "group": "18" }],
+          "parents": [{ "no": "9", "group": "18" }],
           "data": {
             "pilar40": "15",
             "arab": "الحَيَاء",
@@ -693,7 +680,7 @@
           "questionIndex": "11",
           "name": "Hikmah",
           "pillar": { "no": "11", "group": "40" },
-          "parents": [{ "no": "06", "group": "18" }],
+          "parents": [{ "no": "6", "group": "18" }],
           "data": {
             "pilar40": "11",
             "arab": "الحِكْمَة",
@@ -745,7 +732,7 @@
           "questionIndex": "13",
           "name": "Himmah",
           "pillar": { "no": "1", "group": "40" },
-          "parents": [{ "no": "01", "group": "18" }],
+          "parents": [{ "no": "1", "group": "18" }],
           "data": {
             "pilar40": "1",
             "arab": "الهِمَّة",
@@ -771,7 +758,7 @@
           "questionIndex": "14",
           "name": "Husnuzhan",
           "pillar": { "no": "9", "group": "40" },
-          "parents": [{ "no": "05", "group": "18" }],
+          "parents": [{ "no": "5", "group": "18" }],
           "data": {
             "pilar40": "9",
             "arab": "حُسْنُ الظَّن",
@@ -797,7 +784,7 @@
           "questionIndex": "15",
           "name": "‘iffah",
           "pillar": { "no": "13", "group": "40" },
-          "parents": [{ "no": "08", "group": "18" }],
+          "parents": [{ "no": "8", "group": "18" }],
           "data": {
             "pilar40": "13",
             "arab": "العِفَّة",
@@ -823,7 +810,7 @@
           "questionIndex": "16",
           "name": "Ihsaan",
           "pillar": { "no": "2", "group": "40" },
-          "parents": [{ "no": "01", "group": "18" }],
+          "parents": [{ "no": "1", "group": "18" }],
           "data": {
             "pilar40": "2",
             "arab": "الاِحْسَان",
@@ -875,7 +862,7 @@
           "questionIndex": "18",
           "name": "‘izzah",
           "pillar": { "no": "3", "group": "40" },
-          "parents": [{ "no": "02", "group": "18" }],
+          "parents": [{ "no": "2", "group": "18" }],
           "data": {
             "pilar40": "3",
             "arab": "العِزَّة",
@@ -1057,7 +1044,7 @@
           "questionIndex": "25",
           "name": "Nasyaath",
           "pillar": { "no": "6", "group": "40" },
-          "parents": [{ "no": "03", "group": "18" }],
+          "parents": [{ "no": "3", "group": "18" }],
           "data": {
             "pilar40": "6",
             "arab": "النَّشَاط",
@@ -1083,7 +1070,7 @@
           "questionIndex": "26",
           "name": "Nubl",
           "pillar": { "no": "8", "group": "40" },
-          "parents": [{ "no": "04", "group": "18" }],
+          "parents": [{ "no": "4", "group": "18" }],
           "data": {
             "pilar40": "8",
             "arab": "النُّبْل",
@@ -1135,7 +1122,7 @@
           "questionIndex": "28",
           "name": "Qanaa'ah",
           "pillar": { "no": "16", "group": "40" },
-          "parents": [{ "no": "09", "group": "18" }],
+          "parents": [{ "no": "9", "group": "18" }],
           "data": {
             "pilar40": "16",
             "arab": "القَنَاعَة",
@@ -1265,7 +1252,7 @@
           "questionIndex": "33",
           "name": "Shamt",
           "pillar": { "no": "14", "group": "40" },
-          "parents": [{ "no": "08", "group": "18" }],
+          "parents": [{ "no": "8", "group": "18" }],
           "data": {
             "pilar40": "14",
             "arab": "الصَّمْت",
@@ -1291,7 +1278,7 @@
           "questionIndex": "34",
           "name": "Shidq",
           "pillar": { "no": "12", "group": "40" },
-          "parents": [{ "no": "07", "group": "18" }],
+          "parents": [{ "no": "7", "group": "18" }],
           "data": {
             "pilar40": "12",
             "arab": "الصِّدْق",
@@ -1369,7 +1356,7 @@
           "questionIndex": "37",
           "name": "Tawaadhu'",
           "pillar": { "no": "17", "group": "40" },
-          "parents": [{ "no": "09", "group": "18" }],
+          "parents": [{ "no": "9", "group": "18" }],
           "data": {
             "pilar40": "17",
             "arab": "التَّوَاضُع",
@@ -1447,7 +1434,7 @@
           "questionIndex": "40",
           "name": "Waqaar",
           "pillar": { "no": "4", "group": "40" },
-          "parents": [{ "no": "02", "group": "18" }],
+          "parents": [{ "no": "2", "group": "18" }],
           "data": {
             "pilar40": "4",
             "arab": "الوَقَار",
