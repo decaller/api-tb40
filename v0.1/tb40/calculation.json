@@ -3,6 +3,21 @@
   "version": "0.1",
   "report": "",
   "parts": {
+    "umum":{
+      "nama":{
+        "lengkap":"",
+        "panggilan":""
+      },
+      "lahir":{
+        "tanggal":""
+      },
+      "keterangan":{
+        "tingkat":"",
+        "lembaga":"",
+        "refererr":""
+      },
+      "tanggal":""
+    },
     "tb40": {
       "presentation": {
         "definisi_tb40": {
@@ -19,7 +34,7 @@
         },
         "kepribadian": {
           "title": "kepribadian",
-          "data": "{{data.nama.panggilan}} memiliki kepribadian {{data.tb40.result[2][0].name}} ({{data.tb40.result[2][1].data.definisi}}). Secara umum jiwanya cenderung suka {{data.tb40.result[3][0].data.definisi}}. Disamping {{data.nama.panggilan}} cenderung suka {{data.tb40.result[6][0].data.arti}}, {{nama.panggilan}} juga memiliki {{data.tb40.panggilan[18][0].data.arti}}. \n {{data.nama.panggilan}} adalah pribadi yang : {{data.tb40.result[40][0].data.nama}}, {{data.tb40.result[40][1].data.nama}}, {{data.tb40.result[40][2].data.nama}}, {{data.tb40.result[40][3].data.nama}} dan {{data.tb40.result[40][4].data.nama}}"
+          "data": "{{data.umum.nama.panggilan}} memiliki kepribadian {{data.tb40.result[2][0].name}} ({{data.tb40.result[2][1].data.definisi}}). Secara umum jiwanya cenderung suka {{data.tb40.result[3][0].data.definisi}}. Disamping {{data.nama.panggilan}} cenderung suka {{data.tb40.result[6][0].data.arti}}, {{nama.panggilan}} juga memiliki {{data.tb40.panggilan[18][0].data.arti}}. \n {{data.nama.panggilan}} adalah pribadi yang : {{data.tb40.result[40][0].data.nama}}, {{data.tb40.result[40][1].data.nama}}, {{data.tb40.result[40][2].data.nama}}, {{data.tb40.result[40][3].data.nama}} dan {{data.tb40.result[40][4].data.nama}}"
         }
       },
       "result": { "2": [], "3": [], "6": [], "18": [], "40": [] },
