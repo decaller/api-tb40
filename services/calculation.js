@@ -9,73 +9,6 @@ const calculationData = JSON.parse(
     "utf8"
   )
 );
-// const tb40Calc = calculationData.parts.tb40;
-
-// const tb40Result = {};
-
-// const exampleScores = [
-//   60, 70, 80, 90, 100, 60, 70, 80, 90, 100, 60, 70, 80, 90, 100, 60, 70, 80, 90,
-//   100, 60, 70, 80, 90, 100, 60, 70, 80, 90, 100, 60, 70, 80, 90, 100, 60, 70,
-//   80, 90, 100,
-// ];
-// exampleScores
-// Map the results to the corresponding pillars based on the group
-// Object.entries(tb40Calc.result).forEach(([key, value]) => {
-//   tb40Result[key] = tb40Calc.pillars.filter(
-//     (pillar) => pillar.pillar.group === key
-//   );
-// });
-// tb40Result;
-
-// for (let i = 0; i < tb40Calc.groupLinage.length; i++) {
-//   const group = tb40Calc.groupLinage[i];
-//   if (i === 0) {
-//     for (let j = 0; j < tb40Result[group.child].length; j++) {
-//       const pillar = tb40Result[group.child][j];
-//       pillar.score = exampleScores[pillar.questionIndex - 1];
-//     }
-//   }
-
-//   for (let j = 0; j < tb40Result[group.parent].length; j++) {
-//     const pillar = tb40Result[group.parent][j];
-//     pillar.score = tb40Result[group.child]
-//       .filter(
-//         (childPillar) =>
-//           childPillar.parents.filter(
-//             (parentPillar) =>
-//               parentPillar.group === group.parent &&
-//               parentPillar.no === pillar.pillar.no
-//           ).length
-//       )
-//       .map((childPillar) => childPillar.score);
-//     pillar.score =
-//       (pillar.score.reduce((acc, score) => acc + score, 0) / pillar.score.length).toFixed(2);
-//   }
-// }
-// tb40Result
-
-// tb40Calc.groupLinage.forEach((group, index) => {
-//   if (index === 0) {
-//     tb40Result[group.child].forEach((pillar) => {
-//       pillar.score = exampleScores[pillar.questionIndex-1];
-//     });
-//   }
-
-//   tb40Result[group.parent].forEach((pillar) => {
-//     pillar.score = tb40Result[group.child]
-//       .filter(
-//         (childPillar) =>
-//           childPillar.parents.filter(
-//             (parentPillar) =>
-//               parentPillar.group === group.parent &&
-//               parentPillar.no === pillar.pillar.no
-//           ).length
-//       )
-//       .map((childPillar) => childPillar.score);
-//     pillar.score =
-//       (pillar.score.reduce((acc, score) => acc + score, 0) / pillar.score.length).toFixed(2);
-//   });
-// });
 
 function handleCalculation(req) {
   const { version, type } = req.params;
@@ -115,16 +48,32 @@ function handleCalculation(req) {
         )
         .map((childPillar) => childPillar.score);
       pillar.score = (
-        childsPillarScore.reduce((acc, score) => acc + (score * 1), 0) /
+        childsPillarScore.reduce((acc, score) => acc + score * 1, 0) /
         childsPillarScore.length
       ).toFixed(2);
     });
   });
 
+  // Sort the pillars based on their scores
+  tb40Calc.groupLinage.forEach((group, index) => {
+    tb40Result[group.parent] = tb40Result[group.parent].sort(
+      (a, b) => b.score - a.score
+    );
+  });
+
+  // Render the template with the calculation results
+  const tb40Presentation = JSON.parse(
+    renderTemplate(JSON.stringify(tb40Calc.presentation), {
+      umum,
+      tb40: tb40Result,
+    })
+  );
+
   // Return the calculation result
   return {
     message: `Calculation for ${type} in version ${version}`,
     data: tb40Result,
+    tb40Presentation,
   };
 }
 

@@ -4,7 +4,7 @@
   "report": "",
   "parts": {
     "umum": {
-      "input":"same as result",
+      "input": "same as result",
       "result": {
         "nama": {
           "lengkap": "",
@@ -36,19 +36,19 @@
         },
         "julukan": {
           "title": "julukan",
-          "data": "{{data.tb40.result[6][0].data.label}} yang {{data.tb40.result[6][1].data.label}}"
+          "data": "{{tb40.[6].[0].data.label}} yang {{tb40.[6].[1].data.label}}"
         },
         "kepribadian": {
           "title": "kepribadian",
-          "data": "{{data.umum.result.nama.panggilan}} memiliki kepribadian {{data.tb40.result[2][0].name}} ({{data.tb40.result[2][1].data.definisi}}). Secara umum jiwanya cenderung suka {{data.tb40.result[3][0].data.definisi}}. Disamping {{data.nama.panggilan}} cenderung suka {{data.tb40.result[6][0].data.arti}}, {{nama.panggilan}} juga memiliki {{data.tb40.panggilan[18][0].data.arti}}. \n {{data.nama.panggilan}} adalah pribadi yang : {{data.tb40.result[40][0].data.nama}}, {{data.tb40.result[40][1].data.nama}}, {{data.tb40.result[40][2].data.nama}}, {{data.tb40.result[40][3].data.nama}} dan {{data.tb40.result[40][4].data.nama}}"
+          "data": "{{umum.result.nama.lengkap}} memiliki kepribadian {{tb40.[2].[0].name}} ({{tb40.[2].[1].data.definisi}}). Secara umum jiwanya cenderung suka {{tb40.[3].[0].data.definisi}}. Disamping {{umum.nama.lengkap}} cenderung suka {{tb40.[6].[0].data.arti}}, {{umum.nama.lengkap}} juga memiliki {{tb40.[18].[0].data.arti}}. \n {{umum.nama.lengkap}} adalah pribadi yang : {{tb40.[40].[0].data.nama}}, {{tb40.[40].[1].data.nama}}, {{tb40.[40].[2].data.nama}}, {{tb40.[40].[3].data.nama}} dan {{tb40.[40].[4].data.nama}}"
         },
         "ringkasan_gaya_belajar": {
           "title": "Ringkasan Gaya Belajar",
-          "data": "Dalam belajar lebih suka : {{data.tb40.result[3][0].data.gaya_belajar_cara}}."
+          "data": "Dalam belajar lebih suka : {{tb40.[3].[0].data.gaya_belajar_cara}}."
         },
         "ringkasan_bahasa_hati": {
           "title": "Ringkasan Bahasa Hati",
-          "data": "Penyentuh perasaan yang paling efektif :  {{data.tb40.result[3][0].data.bahasa_hati_definisi}}."
+          "data": "Penyentuh perasaan yang paling efektif :  {{tb40.[3].[0].data.bahasa_hati_definisi}}."
         },
         "pemetaan_tafsir_bakat": {
           "title": "Pemetaan Tafsir Bakat",
