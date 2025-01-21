@@ -4,6 +4,7 @@
   "report": "",
   "parts": {
     "umum": {
+      "input":"same as result",
       "result": {
         "nama": {
           "lengkap": "",
