@@ -72,8 +72,7 @@ function handleCalculation(req) {
   // Return the calculation result
   return {
     message: `Calculation for ${type} in version ${version}`,
-    data: tb40Result,
-    tb40Presentation,
+    data: umum, tb40Result, tb40Presentation,
   };
 }
 

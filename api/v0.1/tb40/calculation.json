@@ -40,7 +40,7 @@
         },
         "kepribadian": {
           "title": "kepribadian",
-          "data": "{{umum.result.nama.lengkap}} memiliki kepribadian {{tb40.[2].[0].name}} ({{tb40.[2].[1].data.definisi}}). Secara umum jiwanya cenderung suka {{tb40.[3].[0].data.definisi}}. Disamping {{umum.nama.lengkap}} cenderung suka {{tb40.[6].[0].data.arti}}, {{umum.nama.lengkap}} juga memiliki {{tb40.[18].[0].data.arti}}. \n {{umum.nama.lengkap}} adalah pribadi yang : {{tb40.[40].[0].data.nama}}, {{tb40.[40].[1].data.nama}}, {{tb40.[40].[2].data.nama}}, {{tb40.[40].[3].data.nama}} dan {{tb40.[40].[4].data.nama}}"
+          "data": "{{umum.result.nama.panggilan}} memiliki kepribadian {{tb40.[2].[0].name}} ({{tb40.[2].[1].data.definisi}}). Secara umum jiwanya cenderung suka {{tb40.[3].[0].data.definisi}}. Disamping {{umum.nama.panggilan}} cenderung suka {{tb40.[6].[0].data.arti}}, {{umum.nama.panggilan}} juga memiliki {{tb40.[18].[0].data.arti}}. \n {{umum.nama.panggilan}} adalah pribadi yang : {{tb40.[40].[0].data.nama}}, {{tb40.[40].[1].data.nama}}, {{tb40.[40].[2].data.nama}}, {{tb40.[40].[3].data.nama}} dan {{tb40.[40].[4].data.nama}}"
         },
         "ringkasan_gaya_belajar": {
           "title": "Ringkasan Gaya Belajar",

@@ -33,6 +33,11 @@ function validateRequestBody(req, res, next) {
       });
   }
 
+  // Set nama.panggilan to nama.lengkap if not available
+  if (!umum.nama.panggilan) {
+    umum.nama.panggilan = umum.nama.lengkap;
+  }
+
   next();
 }
 
