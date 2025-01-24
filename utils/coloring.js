@@ -22,7 +22,7 @@ function scoreToColor(score) {
   );
   
   // Convert to hex with fixed 50% saturation
-  return `#${interpolatedColor.map(c => c.toString(16).padStart(2, '0')).join('')}ff`;
+  return `#${interpolatedColor.map(c => c.toString(16).padStart(2, '0')).join('')}`;
 }
 
 function rankToColor(rank, lowestRank) {

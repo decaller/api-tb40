@@ -36,19 +36,19 @@
         },
         "julukan": {
           "title": "julukan",
-          "data": "{{tb40.[6].[0].data.label}} yang {{tb40.[6].[1].data.label}}"
+          "data": "{{tb40.ranked.[6].[0].data.label}} yang {{tb40.ranked.[6].[1].data.label}}"
         },
         "kepribadian": {
           "title": "kepribadian",
-          "data": "{{umum.result.nama.panggilan}} memiliki kepribadian {{tb40.[2].[0].name}} ({{tb40.[2].[1].data.definisi}}). Secara umum jiwanya cenderung suka {{tb40.[3].[0].data.definisi}}. Disamping {{umum.nama.panggilan}} cenderung suka {{tb40.[6].[0].data.arti}}, {{umum.nama.panggilan}} juga memiliki {{tb40.[18].[0].data.arti}}. \n {{umum.nama.panggilan}} adalah pribadi yang : {{tb40.[40].[0].data.nama}}, {{tb40.[40].[1].data.nama}}, {{tb40.[40].[2].data.nama}}, {{tb40.[40].[3].data.nama}} dan {{tb40.[40].[4].data.nama}}"
+          "data": "{{umum.result.nama.panggilan}} memiliki kepribadian {{tb40.ranked.[2].[0].name}} ({{tb40.ranked.[2].[1].data.definisi}}). Secara umum jiwanya cenderung suka {{tb40.ranked.[3].[0].data.definisi}}. Disamping {{umum.nama.panggilan}} cenderung suka {{tb40.ranked.[6].[0].data.arti}}, {{umum.nama.panggilan}} juga memiliki {{tb40.ranked.[18].[0].data.arti}}. \n {{umum.nama.panggilan}} adalah pribadi yang : {{tb40.ranked.[40].[0].data.nama}}, {{tb40.ranked.[40].[1].data.nama}}, {{tb40.ranked.[40].[2].data.nama}}, {{tb40.ranked.[40].[3].data.nama}} dan {{tb40.ranked.[40].[4].data.nama}}"
         },
         "ringkasan_gaya_belajar": {
           "title": "Ringkasan Gaya Belajar",
-          "data": "Dalam belajar lebih suka : {{tb40.[3].[0].data.gaya_belajar_cara}}."
+          "data": "Dalam belajar lebih suka : {{tb40.ranked.[3].[0].data.gaya_belajar_cara}}."
         },
         "ringkasan_bahasa_hati": {
           "title": "Ringkasan Bahasa Hati",
-          "data": "Penyentuh perasaan yang paling efektif :  {{tb40.[3].[0].data.bahasa_hati_definisi}}."
+          "data": "Penyentuh perasaan yang paling efektif :  {{tb40.ranked.[3].[0].data.bahasa_hati_definisi}}."
         },
         "pemetaan_tafsir_bakat": {
           "title": "Pemetaan Tafsir Bakat",

@@ -6,7 +6,7 @@
 
 	<!-- Pillars -->
 	<!-- 2 (Introvert - Extrovert) -->
-	<rect id="2.1" x="112.87" y="24.042" width="963.63" height="2308.8" rx="35" ry="35" fill="#91c483" fill-opacity=".31" stroke-width="1.7488"/>
+	<rect id="2.1" x="112.87" y="24.042" width="963.63" height="2308.8" rx="35" ry="35" fill="{{}}" fill-opacity=".31" stroke-width="1.7488"/>
 	<rect id="2.2" x="1403.8" y="24.042" width="963.63" height="2308.8" rx="35" ry="35" fill="#91c483" fill-opacity=".31" stroke-width="1.7488"/>
 	
 	<!-- 3 -->

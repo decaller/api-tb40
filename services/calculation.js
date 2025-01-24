@@ -79,7 +79,7 @@ function handleCalculation(req) {
   const tb40Presentation = JSON.parse(
     renderTemplate(JSON.stringify(tb40Calc.presentation), {
       umum,
-      tb40: tb40Result,
+      tb40: { result: tb40Result, ranked: tb40ResultRanked },
     })
   );
 
