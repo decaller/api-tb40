@@ -1,6 +1,7 @@
 var fs = require("fs");
 var path = require("path");
 var renderTemplate = require("../utils/templateRenderer");
+var {scoreToColor,rankToColor} = require("../utils/coloring");
 
 // Load the calculation JSON data
 const calculationData = JSON.parse(
@@ -51,6 +52,7 @@ function handleCalculation(req) {
         childsPillarScore.reduce((acc, score) => acc + score * 1, 0) /
         childsPillarScore.length
       ).toFixed(2);
+      pillar.color = scoreToColor(pillar.score); // Calculate the color based on the score
     });
   });
 
@@ -59,6 +61,14 @@ function handleCalculation(req) {
     tb40Result[group.parent] = tb40Result[group.parent].sort(
       (a, b) => b.score - a.score
     );
+  });
+
+  // Calculate the color based on the rank
+  tb40Calc.groupLinage.forEach((group, index) => {
+    tb40Result[group.parent].forEach((pillar, index) => {
+      pillar.rank = index + 1;
+      pillar.rankColor = rankToColor(pillar.rank, tb40Result[group.parent].length);
+    });
   });
 
   // Render the template with the calculation results
