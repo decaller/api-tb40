@@ -1,7 +1,7 @@
 var fs = require("fs");
 var path = require("path");
 var renderTemplate = require("../utils/templateRenderer");
-var {scoreToColor,rankToColor} = require("../utils/coloring");
+var { scoreToColor, rankToColor } = require("../utils/coloring");
 
 // Load the calculation JSON data
 const calculationData = JSON.parse(
@@ -18,7 +18,7 @@ function handleCalculation(req) {
 
   // Load the calculation data for tb40
   const tb40Calc = calculationData.parts.tb40;
-  const tb40Result = {};
+  let tb40Result = {};
 
   // Map the results to the corresponding pillars based on the group
   Object.entries(tb40Calc.result).forEach(([key, value]) => {
@@ -57,17 +57,21 @@ function handleCalculation(req) {
   });
 
   // Sort the pillars based on their scores
+  let tb40ResultRanked = {};
   tb40Calc.groupLinage.forEach((group, index) => {
-    tb40Result[group.parent] = tb40Result[group.parent].sort(
+    tb40ResultRanked[group.parent] = tb40Result[group.parent].sort(
       (a, b) => b.score - a.score
     );
   });
 
   // Calculate the color based on the rank
   tb40Calc.groupLinage.forEach((group, index) => {
-    tb40Result[group.parent].forEach((pillar, index) => {
+    tb40ResultRanked[group.parent].forEach((pillar, index) => {
       pillar.rank = index + 1;
-      pillar.rankColor = rankToColor(pillar.rank, tb40Result[group.parent].length);
+      pillar.rankColor = rankToColor(
+        pillar.rank,
+        tb40ResultRanked[group.parent].length
+      );
     });
   });
 
@@ -82,7 +86,10 @@ function handleCalculation(req) {
   // Return the calculation result
   return {
     message: `Calculation for ${type} in version ${version}`,
-    data: umum, tb40Result, tb40Presentation,
+    data: umum,
+    tb40Result,
+    tb40ResultRanked,
+    tb40Presentation,
   };
 }
 
