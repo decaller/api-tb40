@@ -3,18 +3,18 @@ var path = require("path");
 var renderTemplate = require("../utils/templateRenderer");
 var { scoreToColor, rankToColor } = require("../utils/coloring");
 
-// Load the calculation JSON data
-const calculationData = JSON.parse(
-  fs.readFileSync(
-    path.join(__dirname, "../api/v0.1/tb40/calculation.json"),
-    "utf8",
-  ),
-);
-
 function handleCalculation(req) {
   const { version, type } = req.params;
   const { parts } = req.body;
   const { umum, tb40 } = parts;
+
+  // Load the calculation JSON data
+  const calculationData = JSON.parse(
+    fs.readFileSync(
+      path.join(__dirname, `../api/${version}/${type}/calculation.json`),
+      "utf8",
+    ),
+  );
 
   // Load the calculation data for tb40
   const tb40Calc = calculationData.parts.tb40;
@@ -78,7 +78,7 @@ function handleCalculation(req) {
     console.log(value);
     if (value.file) {
       value.file = fs.readFileSync(
-        path.join(__dirname, `../api/v0.1/tb40/${value.file}`),
+        path.join(__dirname, `../api/${version}/${type}/${value.file}`),
         "utf8",
       );
     }
