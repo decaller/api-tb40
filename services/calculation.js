@@ -15,7 +15,7 @@ function handleCalculation(req) {
       "utf8",
     ),
   );
-
+  // TB40 CALCULATION, TODO: Refactor this to a function when there are more type
   // Load the calculation data for tb40
   const tb40Calc = calculationData.parts.tb40;
   let tb40Result = {};
