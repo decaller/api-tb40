@@ -7,8 +7,8 @@ var { scoreToColor, rankToColor } = require("../utils/coloring");
 const calculationData = JSON.parse(
   fs.readFileSync(
     path.join(__dirname, "../api/v0.1/tb40/calculation.json"),
-    "utf8"
-  )
+    "utf8",
+  ),
 );
 
 function handleCalculation(req) {
@@ -23,7 +23,7 @@ function handleCalculation(req) {
   // Map the results to the corresponding pillars based on the group
   Object.entries(tb40Calc.result).forEach(([key, value]) => {
     tb40Result[key] = tb40Calc.pillars.filter(
-      (pillar) => pillar.pillar.group === key
+      (pillar) => pillar.pillar.group === key,
     );
   });
 
@@ -44,8 +44,8 @@ function handleCalculation(req) {
             childPillar.parents.filter(
               (parentPillar) =>
                 parentPillar.group === group.parent &&
-                parentPillar.no === pillar.pillar.no
-            ).length
+                parentPillar.no === pillar.pillar.no,
+            ).length,
         )
         .map((childPillar) => childPillar.score);
       pillar.score = (
@@ -56,23 +56,32 @@ function handleCalculation(req) {
     });
   });
 
+  // Sort 40 based by number for svg parsing
+  tb40Result["40"].sort((a, b) => a.pillar.no - b.pillar.no);
+
   // Sort the pillars based on their scores
   let tb40ResultRanked = {};
-  tb40Calc.groupLinage.forEach((group, index) => {
-    tb40ResultRanked[group.parent] = tb40Result[group.parent].sort(
-      (a, b) => b.score - a.score
-    );
+  Object.entries(tb40Result).forEach(([key, value]) => {
+    tb40ResultRanked[key] = tb40Result[key].sort((a, b) => b.score - a.score);
   });
 
   // Calculate the color based on the rank
-  tb40Calc.groupLinage.forEach((group, index) => {
-    tb40ResultRanked[group.parent].forEach((pillar, index) => {
+  Object.entries(tb40Result).forEach(([key, value]) => {
+    tb40ResultRanked[key].forEach((pillar, index) => {
       pillar.rank = index + 1;
-      pillar.rankColor = rankToColor(
-        pillar.rank,
-        tb40ResultRanked[group.parent].length
-      );
+      pillar.rankColor = rankToColor(pillar.rank, tb40Result[key].length);
     });
+  });
+
+  // Inject file to presentation
+  Object.entries(tb40Calc.presentation).forEach(([key, value]) => {
+    console.log(value);
+    if (value.file) {
+      value.file = fs.readFileSync(
+        path.join(__dirname, `../api/v0.1/tb40/${value.file}`),
+        "utf8",
+      );
+    }
   });
 
   // Render the template with the calculation results
@@ -80,16 +89,20 @@ function handleCalculation(req) {
     renderTemplate(JSON.stringify(tb40Calc.presentation), {
       umum,
       tb40: { result: tb40Result, ranked: tb40ResultRanked },
-    })
+    }),
   );
 
   // Return the calculation result
   return {
     message: `Calculation for ${type} in version ${version}`,
-    data: umum,
-    tb40Result,
-    tb40ResultRanked,
-    tb40Presentation,
+    parts: {
+      umum,
+      tb40: {
+        tb40Result,
+        tb40ResultRanked,
+        tb40Presentation,
+      },
+    },
   };
 }
 

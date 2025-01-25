@@ -6,43 +6,43 @@
 
 	<!-- Pillars -->
 	<!-- 2 (Introvert - Extrovert) -->
-	<rect id="2.1" x="112.87" y="24.042" width="963.63" height="2308.8" rx="35" ry="35" fill="{{tb40.result.[2].[0].color}}aa" fill-opacity=".31" stroke-width="1.7488"/>
-	<rect id="2.2" x="1403.8" y="24.042" width="963.63" height="2308.8" rx="35" ry="35" fill="{{tb40.result.[2].[1].color}}aa" fill-opacity=".31" stroke-width="1.7488"/>
+	<rect id="2.1" x="112.87" y="24.042" width="963.63" height="2308.8" rx="35" ry="35" fill="{{tb40.result.[2].[0].rankColor}}aa" fill-opacity=".31" stroke-width="1.7488"/>
+	<rect id="2.2" x="1403.8" y="24.042" width="963.63" height="2308.8" rx="35" ry="35" fill="{{tb40.result.[2].[1].rankColor}}aa" fill-opacity=".31" stroke-width="1.7488"/>
 
 	<!-- 3 -->
-	<rect id="3.1" x="1145.3" y="492.49" width="189.73" height="78.416" ry="20" fill="{{tb40.result.[3].[0].color}}"/>
-	<rect id="3.2" x="1145.3" y="1273.6" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[3].[1].color}}"/>
-	<rect id="3.3" x="1145.3" y="2054.7" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[3].[2].color}}"/>
+	<rect id="3.1" x="1145.3" y="492.49" width="189.73" height="78.416" ry="20" fill="{{tb40.result.[3].[0].rankColor}}"/>
+	<rect id="3.2" x="1145.3" y="1273.6" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[3].[1].rankColor}}"/>
+	<rect id="3.3" x="1145.3" y="2054.7" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[3].[2].rankColor}}"/>
 
 	<!-- 6 -->
-	<rect id="6.1" x="840.44" y="492.49" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[6].[0].color}}"/>
-	<rect id="6.2" x="840.44" y="1273.6" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[6].[1].color}}"/>
-	<rect id="6.3" x="840.44" y="2054.7" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[6].[2].color}}"/>
-	<rect id="6.4" x="1450.2" y="492.49" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[6].[3].color}}"/>
-	<rect id="6.5" x="1450.2" y="1273.6" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[6].[4].color}}"/>
-	<rect id="6.6" x="1450.2" y="2054.7" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[6].[5].color}}"/>
+	<rect id="6.1" x="840.44" y="492.49" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[6].[0].rankColor}}"/>
+	<rect id="6.2" x="840.44" y="1273.6" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[6].[1].rankColor}}"/>
+	<rect id="6.3" x="840.44" y="2054.7" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[6].[2].rankColor}}"/>
+	<rect id="6.4" x="1450.2" y="492.49" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[6].[3].rankColor}}"/>
+	<rect id="6.5" x="1450.2" y="1273.6" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[6].[4].rankColor}}"/>
+	<rect id="6.6" x="1450.2" y="2054.7" width="189.73" height="78.416" ry="30" fill="{{tb40.result.[6].[5].rankColor}}"/>
 
 
 	<!-- 18 -->
-    <path id="18.1" d="m630.45 58.552h29.128a29.128 29.128 0 0129.128 29.128v106.95a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[0].color}}"/>
-    <path id="18.2" d="m630.45 232.13h29.128a29.128 29.128 0 0129.128 29.128v106.95a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[1].color}}"/>
-    <path id="18.3" d="m630.45 405.7h29.128a29.128 29.128 0 0129.128 29.128v106.95a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[2].color}}"/>
-    <path id="18.4" d="m630.45 926.43h29.128a29.128 29.128 0 0129.128 29.128v106.95a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[3].color}}"/>
-    <path id="18.5" d="m630.45 1100h29.128a29.128 29.128 0 0129.128 29.128v20.16a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[4].color}}"/>
-    <path id="18.6" d="m630.45 1186.8h29.128a29.128 29.128 0 0129.128 29.128v106.95a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[5].color}}"/>
-    <path id="18.7" d="m630.45 1707.5h29.128a29.128 29.128 0 0129.128 29.128v20.16a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[6].color}}"/>
-    <path id="18.8" d="m630.45 1794.3h29.128a29.128 29.128 0 0129.128 29.128v106.95a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[7].color}}"/>
-    <path id="18.9" d="m630.45 1967.9h29.128a29.128 29.128 0 0129.128 29.128v193.74a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[8].color}}"/>
+    <path id="18.1" d="m630.45 58.552h29.128a29.128 29.128 0 0129.128 29.128v106.95a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[0].rankColor}}"/>
+    <path id="18.2" d="m630.45 232.13h29.128a29.128 29.128 0 0129.128 29.128v106.95a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[1].rankColor}}"/>
+    <path id="18.3" d="m630.45 405.7h29.128a29.128 29.128 0 0129.128 29.128v106.95a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[2].rankColor}}"/>
+    <path id="18.4" d="m630.45 926.43h29.128a29.128 29.128 0 0129.128 29.128v106.95a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[3].rankColor}}"/>
+    <path id="18.5" d="m630.45 1100h29.128a29.128 29.128 0 0129.128 29.128v20.16a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[4].rankColor}}"/>
+    <path id="18.6" d="m630.45 1186.8h29.128a29.128 29.128 0 0129.128 29.128v106.95a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[5].rankColor}}"/>
+    <path id="18.7" d="m630.45 1707.5h29.128a29.128 29.128 0 0129.128 29.128v20.16a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[6].rankColor}}"/>
+    <path id="18.8" d="m630.45 1794.3h29.128a29.128 29.128 0 0129.128 29.128v106.95a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[7].rankColor}}"/>
+    <path id="18.9" d="m630.45 1967.9h29.128a29.128 29.128 0 0129.128 29.128v193.74a29.128 29.128 0 01-29.128 29.128h-29.128z" fill="{{tb40.result.[18].[8].rankColor}}"/>
 
-    <path id="18.10" d="m1820.7 58.552h29.128v251.99h-29.128a29.128 29.128 0 01-29.128-29.128v-193.74a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[9].color}}"/>
-    <path id="18.11" d="m1820.7 318.92h29.128v165.2h-29.128a29.128 29.128 0 01-29.128-29.128v-106.95a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[10].color}}"/>
-    <path id="18.12" d="m1820.7 492.49h29.128v165.2h-29.132a29.124 29.124 0 01-29.124-29.124v-106.95a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[11].color}}"/>
-    <path id="18.13" d="m1820.7 752.86h29.123v338.78h-29.128a29.128 29.128 0 01-29.128-29.128v-280.52a29.133 29.133 0 0129.133-29.133z" fill="{{tb40.result.[18].[12].color}}"/>
-    <path id="18.14" d="m1820.7 1100h29.128v165.2h-29.128a29.128 29.128 0 01-29.128-29.128v-106.95a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[13].color}}"/>
-    <path id="18.15" d="m1820.7 1273.6h29.128v165.2h-29.132a29.124 29.124 0 01-29.124-29.124v-106.95a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[14].color}}"/>
-    <path id="18.16" d="m1820.7 1534h29.128v165.2h-29.128a29.128 29.128 0 01-29.128-29.128v-106.95a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[15].color}}"/>
-    <path id="18.17" d="m1820.7 1707.5h29.128v165.2h-29.128a29.128 29.128 0 01-29.128-29.128v-106.95a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[16].color}}"/>
-    <path id="18.18" d="m1820.7 1881.1h29.128v338.78h-29.128a29.128 29.128 0 01-29.128-29.128v-280.52a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[17].color}}"/>
+    <path id="18.10" d="m1820.7 58.552h29.128v251.99h-29.128a29.128 29.128 0 01-29.128-29.128v-193.74a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[9].rankColor}}"/>
+    <path id="18.11" d="m1820.7 318.92h29.128v165.2h-29.128a29.128 29.128 0 01-29.128-29.128v-106.95a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[10].rankColor}}"/>
+    <path id="18.12" d="m1820.7 492.49h29.128v165.2h-29.132a29.124 29.124 0 01-29.124-29.124v-106.95a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[11].rankColor}}"/>
+    <path id="18.13" d="m1820.7 752.86h29.123v338.78h-29.128a29.128 29.128 0 01-29.128-29.128v-280.52a29.133 29.133 0 0129.133-29.133z" fill="{{tb40.result.[18].[12].rankColor}}"/>
+    <path id="18.14" d="m1820.7 1100h29.128v165.2h-29.128a29.128 29.128 0 01-29.128-29.128v-106.95a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[13].rankColor}}"/>
+    <path id="18.15" d="m1820.7 1273.6h29.128v165.2h-29.132a29.124 29.124 0 01-29.124-29.124v-106.95a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[14].rankColor}}"/>
+    <path id="18.16" d="m1820.7 1534h29.128v165.2h-29.128a29.128 29.128 0 01-29.128-29.128v-106.95a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[15].rankColor}}"/>
+    <path id="18.17" d="m1820.7 1707.5h29.128v165.2h-29.128a29.128 29.128 0 01-29.128-29.128v-106.95a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[16].rankColor}}"/>
+    <path id="18.18" d="m1820.7 1881.1h29.128v338.78h-29.128a29.128 29.128 0 01-29.128-29.128v-280.52a29.128 29.128 0 0129.128-29.128z" fill="{{tb40.result.[18].[17].rankColor}}"/>
 
 	<!-- Unused 18 -->
 	<path d="m659.58 579.28h-29.128v78.417h29.128a29.128 29.128 135 0029.128-29.128v-20.161a29.128 29.128 45 00-29.128-29.128zm24.904 29.085v20.204a24.904 24.904 135 01-24.904 24.904h-24.904v-69.969h24.947a24.861 24.861 45 0124.861 24.861z" fill="#838fc4"/>
@@ -52,51 +52,51 @@
 
 
 	<!-- 40 -->
-	<rect id="40.1" x="420.46" y="58.552" width="189.73" height="78.416" fill="{{tb40.result.[40].[0].color}}"/>
-	<rect id="40.2" x="420.46" y="145.34" width="189.73" height="78.416" fill="{{tb40.result.[40].[1].color}}"/>
-	<rect id="40.3" x="420.46" y="232.13" width="189.73" height="78.416" fill="{{tb40.result.[40].[2].color}}"/>
-	<rect id="40.4" x="420.46" y="318.92" width="189.73" height="78.416" fill="{{tb40.result.[40].[3].color}}"/>
-	<rect id="40.5" x="420.46" y="405.7" width="189.73" height="78.416" fill="{{tb40.result.[40].[4].color}}"/>
-	<rect id="40.6" x="420.46" y="492.49" width="189.73" height="78.416" fill="{{tb40.result.[40].[5].color}}"/>
+	<rect id="40.1" x="420.46" y="58.552" width="189.73" height="78.416" fill="{{tb40.result.[40].[0].rankColor}}"/>
+	<rect id="40.2" x="420.46" y="145.34" width="189.73" height="78.416" fill="{{tb40.result.[40].[1].rankColor}}"/>
+	<rect id="40.3" x="420.46" y="232.13" width="189.73" height="78.416" fill="{{tb40.result.[40].[2].rankColor}}"/>
+	<rect id="40.4" x="420.46" y="318.92" width="189.73" height="78.416" fill="{{tb40.result.[40].[3].rankColor}}"/>
+	<rect id="40.5" x="420.46" y="405.7" width="189.73" height="78.416" fill="{{tb40.result.[40].[4].rankColor}}"/>
+	<rect id="40.6" x="420.46" y="492.49" width="189.73" height="78.416" fill="{{tb40.result.[40].[5].rankColor}}"/>
 
-	<rect id="40.7" x="420.46" y="926.43" width="189.73" height="78.416" fill="{{tb40.result.[40].[6].color}}"/>
-	<rect id="40.8" x="420.46" y="1013.2" width="189.73" height="78.416" fill="{{tb40.result.[40].[7].color}}"/>
-	<rect id="40.9" x="420.46" y="1100" width="189.73" height="78.416" fill="{{tb40.result.[40].[8].color}}"/>
-	<rect id="40.10" x="420.46" y="1186.8" width="189.73" height="78.416" fill="{{tb40.result.[40].[9].color}}"/>
-	<rect id="40.11" x="420.46" y="1273.6" width="189.73" height="78.416" fill="{{tb40.result.[40].[10].color}}"/>
+	<rect id="40.7" x="420.46" y="926.43" width="189.73" height="78.416" fill="{{tb40.result.[40].[6].rankColor}}"/>
+	<rect id="40.8" x="420.46" y="1013.2" width="189.73" height="78.416" fill="{{tb40.result.[40].[7].rankColor}}"/>
+	<rect id="40.9" x="420.46" y="1100" width="189.73" height="78.416" fill="{{tb40.result.[40].[8].rankColor}}"/>
+	<rect id="40.10" x="420.46" y="1186.8" width="189.73" height="78.416" fill="{{tb40.result.[40].[9].rankColor}}"/>
+	<rect id="40.11" x="420.46" y="1273.6" width="189.73" height="78.416" fill="{{tb40.result.[40].[10].rankColor}}"/>
 
-	<rect id="40.12" x="420.46" y="1707.5" width="189.73" height="78.416" fill="{{tb40.result.[40].[11].color}}"/>
-	<rect id="40.13" x="420.46" y="1794.3" width="189.73" height="78.416" fill="{{tb40.result.[40].[12].color}}"/>
-	<rect id="40.14" x="420.46" y="1881.1" width="189.73" height="78.416" fill="{{tb40.result.[40].[13].color}}"/>
-	<rect id="40.15" x="420.46" y="1967.9" width="189.73" height="78.416" fill="{{tb40.result.[40].[14].color}}"/>
-	<rect id="40.16" x="420.46" y="2054.7" width="189.73" height="78.416" fill="{{tb40.result.[40].[15].color}}"/>
-	<rect id="40.17" x="420.46" y="2141.5" width="189.73" height="78.416" fill="{{tb40.result.[40].[16].color}}"/>
+	<rect id="40.12" x="420.46" y="1707.5" width="189.73" height="78.416" fill="{{tb40.result.[40].[11].rankColor}}"/>
+	<rect id="40.13" x="420.46" y="1794.3" width="189.73" height="78.416" fill="{{tb40.result.[40].[12].rankColor}}"/>
+	<rect id="40.14" x="420.46" y="1881.1" width="189.73" height="78.416" fill="{{tb40.result.[40].[13].rankColor}}"/>
+	<rect id="40.15" x="420.46" y="1967.9" width="189.73" height="78.416" fill="{{tb40.result.[40].[14].rankColor}}"/>
+	<rect id="40.16" x="420.46" y="2054.7" width="189.73" height="78.416" fill="{{tb40.result.[40].[15].rankColor}}"/>
+	<rect id="40.17" x="420.46" y="2141.5" width="189.73" height="78.416" fill="{{tb40.result.[40].[16].rankColor}}"/>
 
-	<rect id="40.18" x="1870.1" y="58.552" width="189.73" height="78.416" fill="{{tb40.result.[40].[17].color}}"/>
-	<rect id="40.19" x="1870.1" y="145.34" width="189.73" height="78.416" fill="{{tb40.result.[40].[18].color}}"/>
-	<rect id="40.20" x="1870.1" y="232.13" width="189.73" height="78.416" fill="{{tb40.result.[40].[19].color}}"/>
-	<rect id="40.21" x="1870.1" y="318.92" width="189.73" height="78.416" fill="{{tb40.result.[40].[20].color}}"/>
-	<rect id="40.22" x="1870.1" y="405.7" width="189.73" height="78.416" fill="{{tb40.result.[40].[21].color}}"/>
-	<rect id="40.23" x="1870.1" y="492.49" width="189.73" height="78.416" fill="{{tb40.result.[40].[22].color}}"/>
-	<rect id="40.24" x="1870.1" y="579.28" width="189.73" height="78.416" fill="{{tb40.result.[40].[23].color}}"/>
+	<rect id="40.18" x="1870.1" y="58.552" width="189.73" height="78.416" fill="{{tb40.result.[40].[17].rankColor}}"/>
+	<rect id="40.19" x="1870.1" y="145.34" width="189.73" height="78.416" fill="{{tb40.result.[40].[18].rankColor}}"/>
+	<rect id="40.20" x="1870.1" y="232.13" width="189.73" height="78.416" fill="{{tb40.result.[40].[19].rankColor}}"/>
+	<rect id="40.21" x="1870.1" y="318.92" width="189.73" height="78.416" fill="{{tb40.result.[40].[20].rankColor}}"/>
+	<rect id="40.22" x="1870.1" y="405.7" width="189.73" height="78.416" fill="{{tb40.result.[40].[21].rankColor}}"/>
+	<rect id="40.23" x="1870.1" y="492.49" width="189.73" height="78.416" fill="{{tb40.result.[40].[22].rankColor}}"/>
+	<rect id="40.24" x="1870.1" y="579.28" width="189.73" height="78.416" fill="{{tb40.result.[40].[23].rankColor}}"/>
 
-	<rect id="40.25" x="1870.1" y="752.86" width="189.73" height="78.416" fill="{{tb40.result.[40].[24].color}}"/>
-	<rect id="40.26" x="1870.1" y="839.65" width="189.73" height="78.416" fill="{{tb40.result.[40].[25].color}}"/>
-	<rect id="40.27" x="1870.1" y="926.43" width="189.73" height="78.416" fill="{{tb40.result.[40].[26].color}}"/>
-	<rect id="40.28" x="1870.1" y="1013.2" width="189.73" height="78.416" fill="{{tb40.result.[40].[27].color}}"/>
-	<rect id="40.29" x="1870.1" y="1100" width="189.73" height="78.416" fill="{{tb40.result.[40].[28].color}}"/>
-	<rect id="40.30" x="1870.1" y="1186.8" width="189.73" height="78.416" fill="{{tb40.result.[40].[29].color}}"/>
-	<rect id="40.31" x="1870.1" y="1273.6" width="189.73" height="78.416" fill="{{tb40.result.[40].[30].color}}"/>
-	<rect id="40.32" x="1870.1" y="1360.4" width="189.73" height="78.416" fill="{{tb40.result.[40].[31].color}}"/>
+	<rect id="40.25" x="1870.1" y="752.86" width="189.73" height="78.416" fill="{{tb40.result.[40].[24].rankColor}}"/>
+	<rect id="40.26" x="1870.1" y="839.65" width="189.73" height="78.416" fill="{{tb40.result.[40].[25].rankColor}}"/>
+	<rect id="40.27" x="1870.1" y="926.43" width="189.73" height="78.416" fill="{{tb40.result.[40].[26].rankColor}}"/>
+	<rect id="40.28" x="1870.1" y="1013.2" width="189.73" height="78.416" fill="{{tb40.result.[40].[27].rankColor}}"/>
+	<rect id="40.29" x="1870.1" y="1100" width="189.73" height="78.416" fill="{{tb40.result.[40].[28].rankColor}}"/>
+	<rect id="40.30" x="1870.1" y="1186.8" width="189.73" height="78.416" fill="{{tb40.result.[40].[29].rankColor}}"/>
+	<rect id="40.31" x="1870.1" y="1273.6" width="189.73" height="78.416" fill="{{tb40.result.[40].[30].rankColor}}"/>
+	<rect id="40.32" x="1870.1" y="1360.4" width="189.73" height="78.416" fill="{{tb40.result.[40].[31].rankColor}}"/>
 
-	<rect id="40.33" x="1870.1" y="1534" width="189.73" height="78.416" fill="{{tb40.result.[40].[32].color}}"/>
-	<rect id="40.34" x="1870.1" y="1620.7" width="189.73" height="78.416" fill="{{tb40.result.[40].[33].color}}"/>
-	<rect id="40.35" x="1870.1" y="1707.5" width="189.73" height="78.416" fill="{{tb40.result.[40].[34].color}}"/>
-	<rect id="40.36" x="1870.1" y="1794.3" width="189.73" height="78.416" fill="{{tb40.result.[40].[35].color}}"/>
-	<rect id="40.37" x="1870.1" y="1881.1" width="189.73" height="78.416" fill="{{tb40.result.[40].[36].color}}"/>
-	<rect id="40.38" x="1870.1" y="1967.9" width="189.73" height="78.416" fill="{{tb40.result.[40].[37].color}}"/>
-	<rect id="40.39" x="1870.1" y="2054.7" width="189.73" height="78.416" fill="{{tb40.result.[40].[38].color}}"/>
-	<rect id="40.40" x="1870.1" y="2141.5" width="189.73" height="78.416" fill="{{tb40.result.[40].[39].color}}"/>
+	<rect id="40.33" x="1870.1" y="1534" width="189.73" height="78.416" fill="{{tb40.result.[40].[32].rankColor}}"/>
+	<rect id="40.34" x="1870.1" y="1620.7" width="189.73" height="78.416" fill="{{tb40.result.[40].[33].rankColor}}"/>
+	<rect id="40.35" x="1870.1" y="1707.5" width="189.73" height="78.416" fill="{{tb40.result.[40].[34].rankColor}}"/>
+	<rect id="40.36" x="1870.1" y="1794.3" width="189.73" height="78.416" fill="{{tb40.result.[40].[35].rankColor}}"/>
+	<rect id="40.37" x="1870.1" y="1881.1" width="189.73" height="78.416" fill="{{tb40.result.[40].[36].rankColor}}"/>
+	<rect id="40.38" x="1870.1" y="1967.9" width="189.73" height="78.416" fill="{{tb40.result.[40].[37].rankColor}}"/>
+	<rect id="40.39" x="1870.1" y="2054.7" width="189.73" height="78.416" fill="{{tb40.result.[40].[38].rankColor}}"/>
+	<rect id="40.40" x="1870.1" y="2141.5" width="189.73" height="78.416" fill="{{tb40.result.[40].[39].rankColor}}"/>
 
 	<!-- Unused 40 -->
     <g fill="#838fc4">

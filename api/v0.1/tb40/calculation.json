@@ -52,7 +52,11 @@
         },
         "pemetaan_tafsir_bakat": {
           "title": "Pemetaan Tafsir Bakat",
-          "data": " tb40.svg"
+          "file": "tb40.svg"
+        },
+        "pemetaan_tafsir_bakat_byRank": {
+          "title": "Pemetaan Tafsir Bakat",
+          "file": "tb40byRank.svg"
         }
       },
       "groupLinage": [
