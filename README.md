@@ -15,21 +15,48 @@ API TB40 is a RESTful API service for calculating and analyzing the TB40 (Tafsir
 
 ### Using Docker (on development)
 
-1. Pull the Docker image:
-```bash
-docker pull yourusername/api-tb40
-```
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/[your-github-username]/api-tb40.git
+    ```
 
-2. Run the container:
-```bash
-docker run -p 4040:4040 yourusername/api-tb40
-```
+2.  Build the Docker image from the project root:
+        ```bash
+        cd api-tb40
+        docker build -t ghcr.io/[your-github-username]/api-tb40:[image-tag] .
+        ```
+
+3.  Run the container using `docker run`:
+        ```bash
+        docker run -p 4040:4040 ghcr.io/[your-github-username]/api-tb40:[image-tag]
+        ```
+
+    Or Pull from Docker Hub:
+      ```bash
+        docker run -p 4040:4040 [your-dockerhub-username]/api-tb40:[image-tag]
+        ```
+    *   Replace `[your-github-username]` with your actual GitHub username.
+    *   Replace `[your-dockerhub-username]` with your actual Docker Hub username.
+    *    Replace `[image-tag]` with your desired tag, such as `latest` or a version number (e.g., `0.1`).
+
+### Using Docker Compose (on development)
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/[your-github-username]/api-tb40.git
+    ```
+
+2. Run using Docker Compose from the project root:
+    ```bash
+    cd api-tb40
+    docker-compose up --build
+    ```
 
 ### Manual Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/api-tb40.git
+git clone https://github.com/[your-github-username]/api-tb40.git
 ```
 
 2. Install dependencies:
@@ -178,7 +205,6 @@ const colorMap = {
    - `tb40byRank.hbs` - SVG template with rank-based coloring
    - Dynamic text injection for labels and values
    - Conditional classes for styling
-
 
 ## License
 
