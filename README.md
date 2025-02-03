@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-# api-tb40
-=======
-=======
->>>>>>> eef686f6f70088d8201314c04840c0e522867c79
 # API TB40 (Tafsir Bakat 40)
-
 API TB40 is a RESTful API service for calculating and analyzing the TB40 (Tafsir Bakat 40) personality assessment test. It provides endpoints for getting test questions and calculating test results, including detailed analysis and visual representations.
 
 ## Features
-
 - Get TB40 test questions
 - Calculate TB40 test results
 - Generate visual representations (SVG) of results
@@ -17,8 +10,6 @@ API TB40 is a RESTful API service for calculating and analyzing the TB40 (Tafsir
 - Color coding based on scores and rankings
 
 ## Installation
-
-<<<<<<< HEAD
 ### Using Docker (from main branch)
 
 1.  Pull the Docker image from GitHub Container Registry:
@@ -33,66 +24,16 @@ API TB40 is a RESTful API service for calculating and analyzing the TB40 (Tafsir
     docker run -p 4040:4040 ghcr.io/decaller/api-tb40:latest
     ```
 
-  Or pull from Docker Hub:
-     ```bash
-        docker run -p 4040:4040 [your-dockerhub-username]/api-tb40:latest
-        ```
-    * Replace `decaller` with your actual GitHub username
-    * Replace `[your-dockerhub-username]` with your actual Docker Hub username.
-=======
-### Using Docker (on development)
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/[your-github-username]/api-tb40.git
-    ```
-
-2.  Build the Docker image from the project root:
-        ```bash
-        cd api-tb40
-        docker build -t ghcr.io/[your-github-username]/api-tb40:[image-tag] .
-        ```
-
-3.  Run the container using `docker run`:
-        ```bash
-        docker run -p 4040:4040 ghcr.io/[your-github-username]/api-tb40:[image-tag]
-        ```
-
-    Or Pull from Docker Hub:
-      ```bash
-        docker run -p 4040:4040 [your-dockerhub-username]/api-tb40:[image-tag]
-        ```
-    *   Replace `[your-github-username]` with your actual GitHub username.
-    *   Replace `[your-dockerhub-username]` with your actual Docker Hub username.
-    *    Replace `[image-tag]` with your desired tag, such as `latest` or a version number (e.g., `0.1`).
->>>>>>> eef686f6f70088d8201314c04840c0e522867c79
-
-### Using Docker Compose (on development)
-
-1.  Clone the repository:
-    ```bash
-<<<<<<< HEAD
-    git clone https://github.com/decaller/api-tb40.git
-=======
-    git clone https://github.com/[your-github-username]/api-tb40.git
->>>>>>> eef686f6f70088d8201314c04840c0e522867c79
-    ```
-
-2. Run using Docker Compose from the project root:
-    ```bash
-    cd api-tb40
-    docker-compose up --build
-    ```
 
 ### Manual Installation
 
 1. Clone the repository:
 ```bash
-<<<<<<< HEAD
+
 git clone https://github.com/decaller/api-tb40.git
-=======
-git clone https://github.com/[your-github-username]/api-tb40.git
->>>>>>> eef686f6f70088d8201314c04840c0e522867c79
+
+git clone https://github.com/decaller/api-tb40.git
+
 ```
 
 2. Install dependencies:
@@ -245,7 +186,3 @@ const colorMap = {
 ## License
 
 [ISC](https://choosealicense.com/licenses/isc/)
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> eef686f6f70088d8201314c04840c0e522867c79
