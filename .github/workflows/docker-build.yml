@@ -43,3 +43,8 @@ jobs:
         run: |
           docker tag ghcr.io/${{ github.repository }}:${{ github.sha }} ghcr.io/${{ github.repository }}:latest
           docker push ghcr.io/${{ github.repository }}:latest
+
+      - name: Cleanup
+        run: |
+          git config --local --unset-all http.https://github.com/.extraheader || true
+          git submodule foreach --recursive sh -c "git config --local --unset-all 'http.https://github.com/.extraheader' || :"
