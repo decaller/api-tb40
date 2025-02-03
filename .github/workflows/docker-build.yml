@@ -34,5 +34,6 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository }}:${{ github.ref_name }}
             ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ${{ github.ref == 'refs/heads/main' && 'ghcr.io/' + github.repository + ':latest' || '' }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
