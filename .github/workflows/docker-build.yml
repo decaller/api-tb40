@@ -27,36 +27,12 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push Docker image
-        id: build-and-push
         uses: docker/build-push-action@v4
         with:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}:latest
             ghcr.io/${{ github.repository }}:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-
-      - name: Tag image as latest
-        if: github.ref == 'refs/heads/main'
-        run: |
-          docker tag ghcr.io/${{ github.repository }}:${{ github.sha }} ghcr.io/${{ github.repository }}:latest
-          docker push ghcr.io/${{ github.repository }}:latest
-      - name: Enhanced Cleanup
-        run: |
-          echo "Starting cleanup"
-          if git config --local --unset-all http.https://github.com/.extraheader; then
-            echo "Removed http.https://github.com/.extraheader from main repository"
-          else
-            echo "http.https://github.com/.extraheader not found in main repository"
-          fi
-
-          git submodule foreach --recursive sh -c '
-            if git config --local --unset-all http.https://github.com/.extraheader; then
-              echo "Removed http.https://github.com/.extraheader from submodule $name"
-            else
-              echo "http.https://github.com/.extraheader not found in submodule $name"
-            fi
-          '
-          echo "Cleanup completed"
