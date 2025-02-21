@@ -33,6 +33,7 @@ function handleCalculation(req) {
       // Assign scores from the tb40 array to the first group of pillars
       tb40Result[group.child].forEach((pillar) => {
         pillar.score = tb40[pillar.questionIndex - 1];
+        pillar.color = scoreToColor(pillar.score);
       });
     }
 
