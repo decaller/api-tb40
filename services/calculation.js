@@ -58,9 +58,6 @@ function handleCalculation(req) {
     });
   });
 
-
-
-
   // Sort the pillars based on their scores
   let tb40ResultRanked = {};
   Object.entries(tb40Result).forEach(([key, value]) => {
@@ -75,9 +72,9 @@ function handleCalculation(req) {
     });
   });
 
-  // Sort the resul based by number for svg parsing
+  // Sort the result based by number for svg parsing
   Object.entries(tb40Result).forEach(([key, value]) => {
-    tb40Result[key] = tb40Result[key].sort((a, b) => a.pillar.no - b.pillar.no);
+    tb40Result[key] = structuredClone(tb40Result[key]).sort((a, b) => a.pillar.no - b.pillar.no);
   });
 
   // Inject file to presentation
