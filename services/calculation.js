@@ -2,6 +2,7 @@ var fs = require("fs");
 var path = require("path");
 var renderTemplate = require("../utils/templateRenderer");
 var { scoreToColor, rankToColor } = require("../utils/coloring");
+const { group } = require("console");
 
 function handleCalculation(req) {
   const { version, type } = req.params;
@@ -57,8 +58,8 @@ function handleCalculation(req) {
     });
   });
 
-  // Sort 40 based by number for svg parsing
-  tb40Result["40"].sort((a, b) => a.pillar.no - b.pillar.no);
+
+
 
   // Sort the pillars based on their scores
   let tb40ResultRanked = {};
@@ -66,12 +67,17 @@ function handleCalculation(req) {
     tb40ResultRanked[key] = tb40Result[key].sort((a, b) => b.score - a.score);
   });
 
-  // Calculate the color based on the rank
+  // Calculate the color based on the rank to be inserted into ranked
   Object.entries(tb40Result).forEach(([key, value]) => {
     tb40ResultRanked[key].forEach((pillar, index) => {
       pillar.rank = index + 1;
       pillar.rankColor = rankToColor(pillar.rank, tb40Result[key].length);
     });
+  });
+
+  // Sort the resul based by number for svg parsing
+  Object.entries(tb40Result).forEach(([key, value]) => {
+    tb40Result[key] = tb40Result[key].sort((a, b) => a.pillar.no - b.pillar.no);
   });
 
   // Inject file to presentation
