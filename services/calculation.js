@@ -74,7 +74,7 @@ function handleCalculation(req) {
 
   // Sort the result based by number for svg parsing
   Object.entries(tb40Result).forEach(([key, value]) => {
-    tb40Result[key] = structuredClone(tb40Result[key]).sort((a, b) => a.pillar.no - b.pillar.no);
+    tb40Result[key] = JSON.parse(JSON.stringify(tb40Result[key])).sort((a, b) => a.pillar.no - b.pillar.no);
   });
 
   // Inject file to presentation
