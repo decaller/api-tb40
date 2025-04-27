@@ -235,7 +235,7 @@
         <text id="40.14-arab" x="390.78384" y="1913.4453">الصَّمْت</text>
         <text id="40.15-arab" x="389.29462" y="1998.3762">الحَيَاء</text>
         <text id="40.16-arab" x="389.92776" y="2088.4226">القَنَاعَة</text>
-        <text id="40.17-arab" x="391.17935" y="2166.2783">التَّوَاضُع</text>
+        <text id="40.17-arab" x="391.17935" y="2166.2783">الصَّبْر</text>
     </g>
 
     <!-- Extrovert -->
@@ -254,15 +254,15 @@
         <text id="40.29-arab" x="2075.386" y="1135.9279">المُزَاح</text>
         <text id="40.30-arab" x="2073.428" y="1214.5161">البَشَاشَة</text>
         <text id="40.31-arab" x="2075.4446" y="1302.7659">الرِّفْق</text>
-        <text id="40.32-arab" x="2075.207" y="1392.2916">المَحَبَّة</text>
-        <text id="40.33-arab" x="2075.176" y="1563.4095">الرَّحْمَة</text>
+        <text id="40.32-arab" x="2075.207" y="1392.2916">الرَّحْمَة</text>
+        <text id="40.33-arab" x="2075.176" y="1563.4095">المَحَبَّة</text>
         <text id="40.34-arab" x="2075.8889" y="1649.6968">الاِيْثَار</text>
         <text id="40.35-arab" x="2067.3735" y="1736.4968">كِتْمَانُ السِّرِّ</text>
         <text id="40.36-arab" x="2076.2063" y="1824.6753">السَّتْر</text>
         <text id="40.37-arab" x="2075.0476" y="1916.101">الاَمَانَة</text>
         <text id="40.38-arab" x="2076.2275" y="2002.8896">الاَنَاة</text>
         <text id="40.39-arab" x="2075.6108" y="2082.7168">الحِلْم</text>
-        <text id="40.40-arab" x="2076.2178" y="2171.4993">الصَّبْر</text>
+        <text id="40.40-arab" x="2076.2178" y="2171.4993">التَّوَاضُع</text>
     </g>
 
 	<!-- Latin -->
@@ -306,7 +306,7 @@
         <text x="389.29462" y="2034.3762">pemalu</text>
         <text x="390.78384" y="1949.4453">pendiam</text>
         <text x="389.92776" y="2124.4226">sederhana</text>
-        <text x="391.17935" y="2202.2783">rendah hati</text>
+        <text x="391.17935" y="2202.2783">penyabar</text>
         <text x="390.45993" y="1772.4855">jujur</text>
         <text x="388.83398" y="1863.4207">menjaga diri</text>
 	</g>
@@ -325,7 +325,7 @@
         <text x="2075.4463" y="1076.4777">menepati janji</text>
         <text x="2074.1555" y="817.76678">bekerjaasama</text>
         <text x="2075.6594" y="911.18903">bersatu</text>
-        <text x="2075.207" y="1428.2916">penuh cinta</text>
+        <text x="2075.207" y="1428.2916">berbelas kasih</text>
         <text x="2074.9563" y="995.38281">adil</text>
         <text x="2075.386" y="1171.9279">humoris</text>
         <text x="2075.0476" y="1952.101">bertanggung jawab</text>
@@ -334,7 +334,7 @@
         <text x="2075.6108" y="2118.7168">santun</text>
         <text x="2067.3735" y="1772.4968">penjaga rahasia</text>
         <text x="2075.8889" y="1685.6968">melayani</text>
-        <text x="2076.2178" y="2207.4993">penyabar</text>
-        <text x="2075.176" y="1599.4095">berbelas kasih</text>
+        <text x="2076.2178" y="2207.4993">rendah hati</text>
+        <text x="2075.176" y="1599.4095">penuh cinta</text>
 	</g>
 </svg>
